@@ -1,0 +1,1 @@
+# Skautappka - WordPress plugin
