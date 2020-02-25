@@ -124,29 +124,29 @@ class skautAppkaWidget extends WP_Widget {
 		})
 			.done(function (msg) {
 				var now = Date.now();
-				var nejblizsiVyrenderovana = false;
+				//var nejblizsiVyrenderovana = false;
 				for (var i = 0; i < msg.Items.length; i++)
 				{
 					var vyprava = msg.Items[i];
-					
+					console.log(vyprava);
 					if (vyprava.Konec < now && vyprava.Stav !== "Veřejný")
 						continue;
 
 					if ("<?= $instance["minule-vypravy"] ?>" === "ne" && vyprava.Konec < now)
 						continue;
 
-					if ("<?= $instance["budouci-vypravy"] ?>" === "ne" && vyprava.Konec > now && nejblizsiVyrenderovana)
+					if ("<?= $instance["budouci-vypravy"] ?>" === "ne" && vyprava.Konec > now)
 						continue;
 
 					skautAppkaUpdateVyprava(
 						$, 
 						$('#skautappka-widget-vypravy-<?= $skautappka_shortcode_ids ?>'),
-						!(vyprava.Konec > now && !nejblizsiVyrenderovana),
+						!(vyprava.Konec > now && vyprava.Stav === "Veřejný"),
 						msg.Items[i],
 						"<?= $skautappka_shortcode_ids ?>-" + i);
 						
-					if (vyprava.Konec > now && !nejblizsiVyrenderovana)
-						nejblizsiVyrenderovana = true;
+					// if (vyprava.Konec > now && !nejblizsiVyrenderovana)
+					// 	nejblizsiVyrenderovana = true;
 				}
 
 			})
@@ -280,6 +280,18 @@ class skautAppkaWidget extends WP_Widget {
 				jq("#skautappka-widget-navrat-datum-" + suffix).text(new Date(vyprava.Konec).toLocaleDateString("cs-CS"));
 				jq("#skautappka-widget-navrat-cas-" + suffix).text(new Date(vyprava.Konec).toLocaleTimeString("cs-CS"));
 
+				if (isCollapsed)
+				{
+					var sraz = jq("#skautappka-widget-sraz-datum-" + suffix).text();
+					var navrat = jq("#skautappka-widget-navrat-datum-" + suffix).text();
+					jq("#skautappka-widget-nadpis-doplnek-" + suffix).text(sraz !== navrat ? sraz + " - " + navrat : sraz);
+				}
+				else
+				{
+					if (vyprava.Stav === "Koncept")
+						jq("#skautappka-widget-nadpis-doplnek-" + suffix).text("Výprava se připravuje");
+				}
+
 				if (vyprava.Info !== undefined)
 				{
 					jq("#skautappka-widget-sraz-misto-" + suffix).text(vyprava.Info.MistoSrazu);
@@ -325,14 +337,6 @@ class skautAppkaWidget extends WP_Widget {
 				}
 				else
 				{
-					if (isCollapsed)
-					{
-						var sraz = jq("#skautappka-widget-sraz-datum-" + suffix).text();
-						var navrat = jq("#skautappka-widget-navrat-datum-" + suffix).text();
-						jq("#skautappka-widget-nadpis-doplnek-" + suffix).text(sraz !== navrat ? sraz + " - " + navrat : sraz);
-					}
-					else
-						jq("#skautappka-widget-nadpis-doplnek-" + suffix).text("Výprava se připravuje");
 					jq("#skautappka-widget-sekce-cena-" + suffix).hide();
 					jq("#skautappka-widget-sekce-s-sebou-" + suffix).hide();
 					jq("#skautappka-widget-sekce-poznamky-" + suffix).hide();
