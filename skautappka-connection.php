@@ -1,12 +1,12 @@
 <?php
 /*
-* Plugin Name: SkautAppka Plugin
+* Plugin Name: SkautAppka Connection Plugin
 * Plugin URI: https://www.skautappka.cz
 * Description: Propojení SkautAppky s WordPressem.
 * Version: 1.0.0
 * Author: Luky Haraga
 * Author URI: https://www.skautappka.cz
-* Text Domain: skautappka-widget
+* Text Domain: skautappka-connection
 */
 
 include_once('skautappka-util.php'); // Utility functions for backward compatibility
