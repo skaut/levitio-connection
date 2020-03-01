@@ -128,7 +128,7 @@ class skautAppkaWidget extends WP_Widget {
 				for (var i = 0; i < msg.Items.length; i++)
 				{
 					var vyprava = msg.Items[i];
-					console.log(vyprava);
+
 					if (vyprava.Konec < now && vyprava.Stav !== "Veřejný")
 						continue;
 
