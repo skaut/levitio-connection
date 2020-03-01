@@ -1,3 +1,3 @@
-# Skautappka-connection - WordPress plugin
+# SkautAppka - WordPress plugin
 
-Zatím BETA, bude ještě procházet vývojem.
+Propojení SkautAppky s WordPressem.
