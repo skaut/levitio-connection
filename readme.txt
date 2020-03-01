@@ -1,5 +1,5 @@
 === Skautappka-connection  ===
-Contributors: skaut, 
+Contributors: skaut
 Tags: skaut, skautappka
 Requires at least: 5.0
 Tested up to: 5.3.2
