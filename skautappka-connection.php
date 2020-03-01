@@ -1,7 +1,7 @@
 <?php
 /*
 * Plugin Name: skautappka-connection
-* Plugin URI: https://www.skautappka.cz
+* Plugin URI: https://github.com/skaut/skautappka-connection
 * Description: Propojení SkautAppky s WordPressem.
 * Version: 1.0
 * Author: Luky Haraga
