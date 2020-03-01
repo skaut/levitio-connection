@@ -9,6 +9,4 @@ License: GPL 3.0
 License URI: https://github.com/skaut/skautappka/blob/master/licence.txt
 
 == Description ==
-
-=== Minimal requirements ===
-
+Propojení SkautAppky s WordPressem.
