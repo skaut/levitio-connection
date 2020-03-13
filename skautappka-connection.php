@@ -4,7 +4,7 @@
 * Plugin URI: https://github.com/skaut/skautappka-connection
 * Description: Propojení SkautAppky s WordPressem.
 * Version: 1.0
-* Author: Luky Haraga
+* Author: Junák - český skaut
 * Author URI: https://www.skautappka.cz
 * Text Domain: skautappka-connection
 */
