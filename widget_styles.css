@@ -1,0 +1,105 @@
+.skautappka-widget-sraz-datum
+{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.skautappka-widget-sraz-cas
+{
+    margin-right: 5px;
+}
+
+.skautappka-widget-sraz-misto
+{
+    margin-right: 5px;
+    font-weight: bold;
+}
+/* .skautappka-widget-sraz-zpusob-dopravy{} */
+
+.skautappka-widget-navrat-datum
+{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.skautappka-widget-navrat-cas
+{
+    margin-right: 5px;
+}
+
+.skautappka-widget-navrat-misto
+{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* .skautappka-widget-navrat-zpusob-dopravy{} */
+
+.skautappka-widget-cena
+{
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* .skautappka-widget-poznamka-k-cene
+{
+    margin-right: 5px;
+} */
+
+
+.skautappka-widget-nazev-polozky
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.skautappka-widget-error
+{
+    color: red;
+    background-color: white;
+    display: none;
+}
+.skautappka-widget-body div
+{
+    margin-bottom: 10px;
+}
+.skautappka-widget-body
+{
+    display: none;
+}
+.skautappka-widget-s-sebou p
+{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.skautappka-widget-poznamky-text p
+{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.skautappka-widget-nadpis-doplnek
+{
+    font-size: 60%;
+    margin-left: 10px;
+}
+.skautappka-widget-divider {
+    border-bottom: 1px solid gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.skautappka-widget-collapsed {
+    opacity: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.skautappka-widget-sekce-cena {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skautappka-widget-sekce-poznamky {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.skautappka-widget-sekce-kontakt {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
