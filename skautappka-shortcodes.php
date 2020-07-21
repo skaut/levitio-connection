@@ -1,8 +1,9 @@
 <?php
 
-function skautAppka_shortcode( $atts, $content = null ){
-	global $post, $subpages_indexes;
+if (!defined('ABSPATH')) {exit;}
 
+function skautAppka_shortcode( $atts, $content = null )
+{
 	$args = shortcode_atts( array(
 			'evidencni-cislo'=>'123',
 			'staging'=>false,
@@ -20,11 +21,6 @@ function skautAppka_shortcode( $atts, $content = null ){
 
 	return $cd_code;
 
-} add_shortcode( 'skautappka', 'skautAppka_shortcode');
+}
 
-// function skautAppkaWidget_shortcode_up( $atts, $content = null ){
-
-// 	$atts['direction'] = 'up';
-// 	return skautAppka_shortcode( $atts, $content );
-
-// } add_shortcode( 'countup', 'skautAppkaWidget_shortcode_up');
+add_shortcode( 'skautappka', 'skautAppka_shortcode');
