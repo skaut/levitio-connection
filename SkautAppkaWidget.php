@@ -315,7 +315,7 @@ class SkautAppkaWidget extends WP_Widget
     {
             if (!wp_doing_ajax()) {
             echo '<script type="text/javascript">'
-                . file_get_contents(WP_PLUGIN_DIR.'/skautappka-connection/updateVyprava.js')
+                . file_get_contents(plugins_url('updateVyprava.js', __FILE__))
                 . '</script>';
         }
     }
@@ -450,7 +450,7 @@ class SkautAppkaWidget extends WP_Widget
 
         if (isset($_GET['message']) && isset($messages[$_GET['message']]))
         {
-                $outputHtml .= '<div id="message" class="updated fade"><p>'.$messages[$_GET['message']].'</p>';
+                $outputHtml .= '<div id="message" class="updated fade"><p>'.esc_html($messages[$_GET['message']]).'</p>';
         }
 
         $outputHtml .= '</div>';
@@ -497,7 +497,7 @@ class SkautAppkaWidget extends WP_Widget
             </div>';
 
         $outputHtml .= $this->getNotificationBlockHtml();
-        $outputHtml .= file_get_contents(WP_PLUGIN_DIR.'/skautappka-connection/options-page.html');
+        $outputHtml .= file_get_contents(plugins_url('options-page.html', __FILE__));
         $outputHtml .= $this->getDebugBlockHtml();
         $outputHtml .= '</div>';
 
@@ -511,7 +511,7 @@ class SkautAppkaWidget extends WP_Widget
     public function print_styles($instance)
     {
         echo '<style type="text/css">
-            '.file_get_contents(WP_PLUGIN_DIR.'/skautappka-connection/widget_styles.css').'
+            '.file_get_contents(plugins_url('widget_styles.css', __FILE__)).'
              </style>
         ';
     }
