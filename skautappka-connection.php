@@ -11,7 +11,6 @@
 
 if (!defined('ABSPATH')) {exit;}
 
-include_once('skautappka-util.php'); // Utility functions for backward compatibility
 include_once('skautappka-shortcodes.php'); // Shortcode functions
 include_once('SkautAppkaWidget.php'); // Shortcode functions
 
