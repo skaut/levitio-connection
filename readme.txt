@@ -1,4 +1,4 @@
-=== Skautappka-connection  ===
+=== Skautappka connection  ===
 Contributors: skaut, lharaga
 Tags: skaut, skautappka
 Requires at least: 5.0
