@@ -10,3 +10,14 @@ License URI: https://github.com/skaut/skautappka/blob/master/licence.txt
 
 == Description ==
 Connecting SkautAppky with WordPress.
+
+=== Minimal requirements ===
+* WordPress 5.0 or higher
+* PHP 7.0 or higher
+
+== Changelog ==
+
+= 1.0 =
+* The first version
+* Required WordPress 5.0 and higher
+* Required PHP 7.0 and higher
