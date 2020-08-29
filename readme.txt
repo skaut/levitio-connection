@@ -15,6 +15,9 @@ Connecting SkautAppky with WordPress.
 * WordPress 5.0 or higher
 * PHP 7.0 or higher
 
+=== GitHub ===
+All the sources for the plugin and the build process are detailed in our [Github repo](https://github.com/skaut/skautappka-connection).
+
 == Changelog ==
 
 = 1.0 =
