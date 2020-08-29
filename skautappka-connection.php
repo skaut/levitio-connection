@@ -1,6 +1,6 @@
 <?php
 /*
-* Plugin Name: skautappka-connection
+* Plugin Name: Skautappka connection
 * Plugin URI: https://github.com/skaut/skautappka-connection
 * Description: Propojení SkautAppky s WordPressem.
 * Version: 1.0
