@@ -1,4 +1,4 @@
-=== Skautappka connection  ===
+=== Levitio connection  ===
 Contributors: skaut, lharaga
 Tags: skaut, skautappka
 Requires at least: 5.0
