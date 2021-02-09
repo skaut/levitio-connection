@@ -5,7 +5,7 @@
 * Description: Propojení SkautAppky s WordPressem.
 * Version: 1.0
 * Author: Junák - český skaut
-* Author URI: https://www.skautappka.cz
+* Author URI: https://www.levitio.cz/
 * Text Domain: skautappka-connection
 */
 
