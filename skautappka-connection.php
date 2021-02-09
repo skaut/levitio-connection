@@ -1,8 +1,8 @@
 <?php
 /*
 * Plugin Name: Skautappka connection
-* Plugin URI: https://github.com/skaut/skautappka-connection
-* Description: Propojení SkautAppky s WordPressem.
+* Plugin URI: https://github.com/skaut/levitio-connection
+* Description: Propojení Levitia s WordPressem.
 * Version: 1.0
 * Author: Junák - český skaut
 * Author URI: https://www.levitio.cz/
