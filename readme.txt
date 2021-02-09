@@ -6,7 +6,7 @@ Tested up to: 5.6
 Stable tag: 1.0
 Requires PHP: 7.0
 License: GPL 3.0
-License URI: https://github.com/skaut/skautappka/blob/master/licence.txt
+License URI: https://github.com/skaut/levitio-connection/blob/master/licence.txt
 
 == Description ==
 Connecting SkautAppky with WordPress.
