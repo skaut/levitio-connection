@@ -1,4 +1,4 @@
-# SkautAppka - WordPress plugin
+# Levitio - WordPress plugin
 
 Tento plugin propojuje SkautAppku s WordPressem.
 Jeho cílem je zjednodušit organizační úkony skautským vedoucím.
