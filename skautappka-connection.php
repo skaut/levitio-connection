@@ -1,6 +1,6 @@
 <?php
 /*
-* Plugin Name: Skautappka connection
+* Plugin Name: Levitio connection
 * Plugin URI: https://github.com/skaut/levitio-connection
 * Description: Propojení Levitia s WordPressem.
 * Version: 1.0
