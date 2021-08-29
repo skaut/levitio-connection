@@ -6,7 +6,7 @@
 * Version: 1.0
 * Author: Junák - český skaut
 * Author URI: https://www.levitio.cz/
-* Text Domain: skautappka-connection
+* Text Domain: levitio-connection
 */
 
 if (!defined('ABSPATH')) {exit;}
