@@ -1,8 +1,8 @@
 === Levitio connection  ===
 Contributors: skaut, lharaga
-Tags: skaut, skautappka
+Tags: skaut, levitio
 Requires at least: 5.0
-Tested up to: 5.7
+Tested up to: 5.8
 Stable tag: 1.0
 Requires PHP: 7.0
 License: GPL 3.0
